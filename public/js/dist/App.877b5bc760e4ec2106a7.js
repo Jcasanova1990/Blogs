@@ -913,7 +913,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.ZxKPICSwayuwHOg6ncfJ {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column; /* Added to align items in a column */
+  flex-direction: column;
 }
 .ZxKPICSwayuwHOg6ncfJ h1 {
   color: lime;
@@ -923,10 +923,10 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.ZxKPICSwayuwHOg6ncfJ {
   flex-direction: column;
   align-items: center;
   margin-top: 20px;
-  order: -1; /* Move form container to the top */
+  order: -1;
 }
 .ZxKPICSwayuwHOg6ncfJ .olATBa2g1ZyCA65O6xGi {
-  order: -2; /* Move register button above the form container */
+  order: -2;
 }
 .ZxKPICSwayuwHOg6ncfJ a {
   color: lime;
@@ -967,7 +967,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.ZxKPICSwayuwHOg6ncfJ {
 }
 .ZxKPICSwayuwHOg6ncfJ .lXfzdOHBHXf5pLlpvxSs:hover {
   background-color: darkgrey;
-}`, "",{"version":3,"sources":["webpack://./src/pages/HomePage/HomePage.module.scss"],"names":[],"mappings":"AAAA;EACE,WAAA;EACA,uBAAA;EACA,aAAA;EACA,uBAAA;EACA,mBAAA;EACA,sBAAA,EAAA,qCAAA;AACF;AACE;EACE,WAAA;AACJ;AAEE;EACE,aAAA;EACA,sBAAA;EACA,mBAAA;EACA,gBAAA;EACA,SAAA,EAAA,mCAAA;AAAJ;AAGE;EACE,SAAA,EAAA,kDAAA;AADJ;AAIE;EACE,WAAA;EACA,qBAAA;EACA,sBAAA;EACA,kBAAA;EACA,uBAAA;EACA,sBAAA;EACA,qBAAA;EACA,iBAAA;AAFJ;AAII;EACE,gBAAA;AAFN;AAKI;EACE,WAAA;EACA,kBAAA;EACA,WAAA;EACA,YAAA;EACA,MAAA;EACA,OAAA;EACA,2BAAA;EACA,WAAA;EACA,mCAAA;EACA,oBAAA;EACA,sBAAA;AAHN;AAMI;EACE,oBAAA;AAJN;AAQE;EACE,sBAAA;EACA,YAAA;EACA,YAAA;EACA,kBAAA;EACA,eAAA;EACA,iCAAA;AANJ;AAQI;EACE,0BAAA;AANN","sourcesContent":[".home-page {\n  color: lime;\n  background-color: black;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  flex-direction: column; /* Added to align items in a column */\n\n  h1 {\n    color: lime;\n  }\n\n  .form-container {\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    margin-top: 20px;\n    order: -1; /* Move form container to the top */\n  }\n\n  .register-button {\n    order: -2; /* Move register button above the form container */\n  }\n\n  a {\n    color: lime;\n    text-decoration: none;\n    transition: color 0.3s;\n    position: relative;\n    border: 1px solid black;\n    background-color: grey;\n    display: inline-block;\n    padding: 5px 10px;\n\n    &:hover {\n      color: limegreen;\n    }\n\n    &::before {\n      content: '';\n      position: absolute;\n      width: 100%;\n      height: 100%;\n      top: 0;\n      left: 0;\n      background-color: limegreen;\n      z-index: -1;\n      transition: transform 0.4s ease-out;\n      transform: scaleX(0);\n      transform-origin: left;\n    }\n\n    &:hover::before {\n      transform: scaleX(1);\n    }\n  }\n\n  .button {\n    background-color: grey;\n    color: black;\n    border: none;\n    padding: 10px 20px;\n    cursor: pointer;\n    transition: background-color 0.3s;\n\n    &:hover {\n      background-color: darkgrey;\n    }\n  }\n}\n"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./src/pages/HomePage/HomePage.module.scss"],"names":[],"mappings":"AAAA;EACE,WAAA;EACA,uBAAA;EACA,aAAA;EACA,uBAAA;EACA,mBAAA;EACA,sBAAA;AACF;AACE;EACE,WAAA;AACJ;AAEE;EACE,aAAA;EACA,sBAAA;EACA,mBAAA;EACA,gBAAA;EACA,SAAA;AAAJ;AAGE;EACE,SAAA;AADJ;AAIE;EACE,WAAA;EACA,qBAAA;EACA,sBAAA;EACA,kBAAA;EACA,uBAAA;EACA,sBAAA;EACA,qBAAA;EACA,iBAAA;AAFJ;AAII;EACE,gBAAA;AAFN;AAKI;EACE,WAAA;EACA,kBAAA;EACA,WAAA;EACA,YAAA;EACA,MAAA;EACA,OAAA;EACA,2BAAA;EACA,WAAA;EACA,mCAAA;EACA,oBAAA;EACA,sBAAA;AAHN;AAMI;EACE,oBAAA;AAJN;AAQE;EACE,sBAAA;EACA,YAAA;EACA,YAAA;EACA,kBAAA;EACA,eAAA;EACA,iCAAA;AANJ;AAQI;EACE,0BAAA;AANN","sourcesContent":[".home-page {\n  color: lime;\n  background-color: black;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  flex-direction: column;\n\n  h1 {\n    color: lime;\n  }\n\n  .form-container {\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    margin-top: 20px;\n    order: -1; \n  }\n\n  .register-button {\n    order: -2;\n  }\n\n  a {\n    color: lime;\n    text-decoration: none;\n    transition: color 0.3s;\n    position: relative;\n    border: 1px solid black;\n    background-color: grey;\n    display: inline-block;\n    padding: 5px 10px;\n\n    &:hover {\n      color: limegreen;\n    }\n\n    &::before {\n      content: '';\n      position: absolute;\n      width: 100%;\n      height: 100%;\n      top: 0;\n      left: 0;\n      background-color: limegreen;\n      z-index: -1;\n      transition: transform 0.4s ease-out;\n      transform: scaleX(0);\n      transform-origin: left;\n    }\n\n    &:hover::before {\n      transform: scaleX(1);\n    }\n  }\n\n  .button {\n    background-color: grey;\n    color: black;\n    border: none;\n    padding: 10px 20px;\n    cursor: pointer;\n    transition: background-color 0.3s;\n\n    &:hover {\n      background-color: darkgrey;\n    }\n  }\n}\n"],"sourceRoot":""}]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"home-page": `ZxKPICSwayuwHOg6ncfJ`,
@@ -1014,19 +1014,19 @@ ___CSS_LOADER_EXPORT___.push([module.id, `@keyframes JZEXpwgdJttJIESmPL7Q {
   align-items: center;
   justify-content: center;
   padding: 20px;
-  background-color: black; /* Set page background color to black */
+  background-color: black;
 }
 
 .bYfeVPMWND91HQisiC61 {
-  color: lime; /* Example link color */
+  color: lime;
   background-color: grey;
   text-decoration: none;
   margin-bottom: 20px;
-  transition: transform 0.3s ease; /* Add transition for smooth hover effect */
+  transition: transform 0.3s ease;
 }
 
 .bYfeVPMWND91HQisiC61:hover {
-  transform: translateY(-5px); /* Apply hover effect */
+  transform: translateY(-5px);
 }
 
 .yQsQX5xv3NjZgKeyig2W {
@@ -1041,20 +1041,20 @@ ___CSS_LOADER_EXPORT___.push([module.id, `@keyframes JZEXpwgdJttJIESmPL7Q {
 }
 
 .czOW8lJB8jq3AErDHwbK {
-  background-color: grey; /* Example button background color */
-  color: lime; /* Example button text color */
+  background-color: grey;
+  color: lime;
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   font-size: 16px;
   margin-bottom: 10px;
-  animation: JZEXpwgdJttJIESmPL7Q 1.5s infinite alternate; /* Apply glowing animation */
+  animation: JZEXpwgdJttJIESmPL7Q 1.5s infinite alternate;
 }
 
 .czOW8lJB8jq3AErDHwbK:hover {
-  transform: translateY(-3px); /* Apply hover effect */
-}`, "",{"version":3,"sources":["webpack://./src/pages/ShowPage/ShowPage.module.scss"],"names":[],"mappings":"AAEA;EACE;IACE,WAAA;IACA,4IAAA;EADF;EAGA;IACE,WAAA;IACA,yIAAA;EADF;AACF;AAIA;EACE,aAAA;EACA,sBAAA;EACA,mBAAA;EACA,uBAAA;EACA,aAAA;EACA,uBAAA,EAAA,uCAAA;AAFF;;AAKA;EACE,WAAA,EAAA,uBAAA;EACA,sBAAA;EACA,qBAAA;EACA,mBAAA;EACA,+BAAA,EAAA,2CAAA;AAFF;;AAKA;EACE,2BAAA,EAAA,uBAAA;AAFF;;AAKA;EACE,WAAA;EACA,eAAA;EACA,mBAAA;AAFF;;AAKA;EACE,eAAA;EACA,mBAAA;AAFF;;AAKA;EACE,sBAAA,EAAA,oCAAA;EACA,WAAA,EAAA,8BAAA;EACA,kBAAA;EACA,YAAA;EACA,kBAAA;EACA,eAAA;EACA,eAAA;EACA,mBAAA;EACA,uDAAA,EAAA,4BAAA;AAFF;;AAKA;EACE,2BAAA,EAAA,uBAAA;AAFF","sourcesContent":["// ShowPage.module.scss\n\n@keyframes glowing {\n  0% {\n    color: lime;\n    text-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 40px #00ff00, 0 0 80px #00ff00, 0 0 120px #00ff00, 0 0 150px #00ff00, 0 0 170px #00ff00;\n  }\n  100% {\n    color: lime;\n    text-shadow: 0 0 20px #00ff00, 0 0 30px #00ff00, 0 0 40px #00ff00, 0 0 50px #00ff00, 0 0 60px #00ff00, 0 0 70px #00ff00, 0 0 80px #00ff00;\n  }\n}\n\n.container {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: center;\n  padding: 20px;\n  background-color: black; /* Set page background color to black */\n}\n\n.link {\n  color: lime; /* Example link color */\n  background-color: grey;\n  text-decoration: none;\n  margin-bottom: 20px;\n  transition: transform 0.3s ease; /* Add transition for smooth hover effect */\n}\n\n.link:hover {\n  transform: translateY(-5px); /* Apply hover effect */\n}\n\n.title {\n  color: lime;\n  font-size: 24px;\n  margin-bottom: 10px;\n}\n\n.body {\n  font-size: 18px;\n  margin-bottom: 20px;\n}\n\n.button {\n  background-color: grey; /* Example button background color */\n  color: lime; /* Example button text color */\n  padding: 10px 20px;\n  border: none;\n  border-radius: 5px;\n  cursor: pointer;\n  font-size: 16px;\n  margin-bottom: 10px;\n  animation: glowing 1.5s infinite alternate; /* Apply glowing animation */\n}\n\n.button:hover {\n  transform: translateY(-3px); /* Apply hover effect */\n}\n"],"sourceRoot":""}]);
+  transform: translateY(-3px);
+}`, "",{"version":3,"sources":["webpack://./src/pages/ShowPage/ShowPage.module.scss"],"names":[],"mappings":"AACA;EACE;IACE,WAAA;IACA,4IAAA;EAAF;EAEA;IACE,WAAA;IACA,yIAAA;EAAF;AACF;AAGA;EACE,aAAA;EACA,sBAAA;EACA,mBAAA;EACA,uBAAA;EACA,aAAA;EACA,uBAAA;AADF;;AAIA;EACE,WAAA;EACA,sBAAA;EACA,qBAAA;EACA,mBAAA;EACA,+BAAA;AADF;;AAIA;EACE,2BAAA;AADF;;AAIA;EACE,WAAA;EACA,eAAA;EACA,mBAAA;AADF;;AAIA;EACE,eAAA;EACA,mBAAA;AADF;;AAIA;EACE,sBAAA;EACA,WAAA;EACA,kBAAA;EACA,YAAA;EACA,kBAAA;EACA,eAAA;EACA,eAAA;EACA,mBAAA;EACA,uDAAA;AADF;;AAIA;EACE,2BAAA;AADF","sourcesContent":["\n@keyframes glowing {\n  0% {\n    color: lime;\n    text-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 40px #00ff00, 0 0 80px #00ff00, 0 0 120px #00ff00, 0 0 150px #00ff00, 0 0 170px #00ff00;\n  }\n  100% {\n    color: lime;\n    text-shadow: 0 0 20px #00ff00, 0 0 30px #00ff00, 0 0 40px #00ff00, 0 0 50px #00ff00, 0 0 60px #00ff00, 0 0 70px #00ff00, 0 0 80px #00ff00;\n  }\n}\n\n.container {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: center;\n  padding: 20px;\n  background-color: black;\n}\n\n.link {\n  color: lime; \n  background-color: grey;\n  text-decoration: none;\n  margin-bottom: 20px;\n  transition: transform 0.3s ease;\n}\n\n.link:hover {\n  transform: translateY(-5px);\n}\n\n.title {\n  color: lime;\n  font-size: 24px;\n  margin-bottom: 10px;\n}\n\n.body {\n  font-size: 18px;\n  margin-bottom: 20px;\n}\n\n.button {\n  background-color: grey; \n  color: lime; \n  padding: 10px 20px;\n  border: none;\n  border-radius: 5px;\n  cursor: pointer;\n  font-size: 16px;\n  margin-bottom: 10px;\n  animation: glowing 1.5s infinite alternate; \n}\n\n.button:hover {\n  transform: translateY(-3px); \n}\n"],"sourceRoot":""}]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"container": `fksxJrYsxrKcQjQaVefi`,
@@ -1599,4 +1599,4 @@ var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js
 /******/ 	
 /******/ })()
 ;
-//# sourceMappingURL=App.5c12f06984a740954f392fa50c7bd7f0.js.map
+//# sourceMappingURL=App.338c1fb7bf3f68facba2f3db6a5442b4.js.map

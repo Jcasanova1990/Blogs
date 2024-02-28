@@ -4,7 +4,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column; /* Added to align items in a column */
+  flex-direction: column;
 
   h1 {
     color: lime;
@@ -15,11 +15,11 @@
     flex-direction: column;
     align-items: center;
     margin-top: 20px;
-    order: -1; /* Move form container to the top */
+    order: -1; 
   }
 
   .register-button {
-    order: -2; /* Move register button above the form container */
+    order: -2;
   }
 
   a {
