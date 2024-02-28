@@ -1,0 +1,47 @@
+$black: #000000;
+$green: #00FF00;
+$lime: #00FF00;
+
+.authContainer {
+  background-color: $black;
+  color: $green;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.button {
+  background-color: $green;
+  color: $black;
+  border: none;
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: $lime;
+    animation: breathe 1.5s infinite alternate ease-in-out;
+  }
+}
+
+.link {
+  color: $lime;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+
+  &:hover {
+    color: lighten($lime, 20%);
+  }
+}
+
+@keyframes breathe {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}

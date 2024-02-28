@@ -1,0 +1,70 @@
+.home-page {
+  color: lime;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; /* Added to align items in a column */
+
+  h1 {
+    color: lime;
+  }
+
+  .form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    order: -1; /* Move form container to the top */
+  }
+
+  .register-button {
+    order: -2; /* Move register button above the form container */
+  }
+
+  a {
+    color: lime;
+    text-decoration: none;
+    transition: color 0.3s;
+    position: relative;
+    border: 1px solid black;
+    background-color: grey;
+    display: inline-block;
+    padding: 5px 10px;
+
+    &:hover {
+      color: limegreen;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background-color: limegreen;
+      z-index: -1;
+      transition: transform 0.4s ease-out;
+      transform: scaleX(0);
+      transform-origin: left;
+    }
+
+    &:hover::before {
+      transform: scaleX(1);
+    }
+  }
+
+  .button {
+    background-color: grey;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+    &:hover {
+      background-color: darkgrey;
+    }
+  }
+}

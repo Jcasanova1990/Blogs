@@ -1,0 +1,60 @@
+// ShowPage.module.scss
+
+@keyframes glowing {
+  0% {
+    color: lime;
+    text-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 40px #00ff00, 0 0 80px #00ff00, 0 0 120px #00ff00, 0 0 150px #00ff00, 0 0 170px #00ff00;
+  }
+  100% {
+    color: lime;
+    text-shadow: 0 0 20px #00ff00, 0 0 30px #00ff00, 0 0 40px #00ff00, 0 0 50px #00ff00, 0 0 60px #00ff00, 0 0 70px #00ff00, 0 0 80px #00ff00;
+  }
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: black; /* Set page background color to black */
+}
+
+.link {
+  color: lime; /* Example link color */
+  background-color: grey;
+  text-decoration: none;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease; /* Add transition for smooth hover effect */
+}
+
+.link:hover {
+  transform: translateY(-5px); /* Apply hover effect */
+}
+
+.title {
+  color: lime;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.body {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.button {
+  background-color: grey; /* Example button background color */
+  color: lime; /* Example button text color */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-bottom: 10px;
+  animation: glowing 1.5s infinite alternate; /* Apply glowing animation */
+}
+
+.button:hover {
+  transform: translateY(-3px); /* Apply hover effect */
+}
